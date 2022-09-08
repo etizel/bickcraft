@@ -1,0 +1,46 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+  background-color: var(--cor-a1);
+  overflow: hidden;
+}
+.depoimento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+.depoimento-conteudo {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+}
+.depoimento-conteudo p {
+  font-family: "Merriweather", serif;
+  margin-bottom: 32px;
+  max-width: 32ch;
+}
+
+.depoimento-conteudo::before {
+  content: "";
+  margin-top: 8px;
+  margin-bottom: 32px;
+  width: 98px;
+  height: 20px;
+  display: inline-block;
+  background: url(/img/icones/depoimento.svg);
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    justify-self: center;
+  }
+  .depoimento img {
+    max-height: 220px;
+  }
+}
