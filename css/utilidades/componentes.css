@@ -14,6 +14,14 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   color: var(--cor-a5);
   font: 600 1.125rem/1.5 "Roboto", sans-serif;
+  max-width: max-content;
+}
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+.botao.secundario:hover {
+  background: var(--cor-9);
 }
 .botao a:hover {
   background: linear-gradient(var(--cor-a1), var(cor-a3));
@@ -42,4 +50,27 @@
 
 .link:hover {
   color: var(--cor-1);
+}
+
+/* TÍTULOS INTERNOS */
+
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--cor-11);
+}
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }
