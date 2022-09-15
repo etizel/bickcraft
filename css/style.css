@@ -2,6 +2,10 @@
 @import "./biciletas/bicicletas-lista.css";
 @import "./biciletas/bicicletas.css";
 
+/* Bicicleta */
+@import "./bicicleta/bicicleta.css";
+@import "./bicicleta/seguro.css";
+
 /* Global */
 @import "./global/global.css";
 @import "./global/header.css";
