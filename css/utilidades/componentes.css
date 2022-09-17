@@ -15,6 +15,8 @@
   color: var(--cor-a5);
   font: 600 1.125rem/1.5 "Roboto", sans-serif;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 .botao.seta {
   display: flex;
@@ -37,10 +39,10 @@
   color: var(--cor-2);
 }
 .botao.secundario:hover {
-  background: var(--cor-9);
+  background-color: var(--cor-9);
 }
 .botao a:hover {
-  background: linear-gradient(var(--cor-a1), var(cor-a3));
+  background: linear-gradient(var(--cor-a1), var(--cor-a3));
 }
 
 @media (max-width: 600px) {
