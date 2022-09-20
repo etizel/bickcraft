@@ -36,7 +36,10 @@
   gap: 20px;
 }
 .orcamento-produto > label {
-  grid-column: initial;
+  /* grid-column: initial; */
+}
+#seguro {
+  initial-value: initial;
 }
 .orcamento-produto label {
   font: 500 1rem/1.5 "Poppins", sans-serif;
@@ -46,6 +49,7 @@
   padding: 12px 16px;
   border-radius: 4px;
   cursor: pointer;
+  display: inline-block;
 }
 .orcamento-dados {
   border-radius: 0 5px 5px 0;
