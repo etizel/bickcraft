@@ -25,3 +25,15 @@ function activeProduct(parametro) {
 }
 
 parametros.forEach(activeProduct);
+
+// Perguntas Frequentes
+
+const perguntas = document.querySelectorAll(".perguntas button");
+
+function eventosPerguntas(e) {
+  console.log(e);
+}
+
+perguntas.forEach(eventosPerguntas);
+
+console.log(perguntas);
