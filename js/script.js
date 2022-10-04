@@ -30,10 +30,26 @@ parametros.forEach(activeProduct);
 
 const perguntas = document.querySelectorAll(".perguntas button");
 
-function eventosPerguntas(e) {
-  console.log(e);
+function perguntaSetada(cliked) {
+  const local = cliked.currentTarget;
+  const controls = local.getAttribute("aria-controls");
+  const resposta = document.getElementById(controls);
+  console.log(resposta);
+  resposta.classList.toggle("active");
+  const ativa = resposta.classList.contains("active");
+  console.log(ativa);
+  local.setAttribute("aria-expanded", "true");
+}
+
+function eventosPerguntas(pergunta) {
+  pergunta.addEventListener("click", perguntaSetada);
 }
 
 perguntas.forEach(eventosPerguntas);
 
-console.log(perguntas);
+// Galeria Dinâmica
+
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+console.log(galeria, galeriaContainer);
