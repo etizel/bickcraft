@@ -21,6 +21,7 @@
 @import "./orcamento/orcamento.css";
 
 /* Utilidades */
+@import "./utilidades/animacao.css";
 @import "./utilidades/componentes.css";
 @import "./utilidades/formulario.css";
 @import "./utilidades/cores.css";
